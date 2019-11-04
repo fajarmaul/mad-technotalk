@@ -1,6 +1,8 @@
-package com.madipb.technotalk;
+package com.madipb.technotalk.database;
 
 import android.content.Context;
+
+import com.madipb.technotalk.data.AnggotaEntity;
 
 import androidx.room.Database;
 import androidx.room.Room;

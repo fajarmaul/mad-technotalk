@@ -1,7 +1,8 @@
-package com.madipb.technotalk;
+package com.madipb.technotalk.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,12 +10,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.madipb.technotalk.data.AnggotaEntity;
+import com.madipb.technotalk.database.KomunitasDAO;
+import com.madipb.technotalk.database.KomunitasDatabase;
+import com.madipb.technotalk.database.KomunitasTask;
+import com.madipb.technotalk.R;
 import com.madipb.technotalk.listener.BasicTaskListener;
 
 public class MainActivity extends AppCompatActivity {
     private final String TAG = "MainActivity";
     private EditText nameET, emailET, komunitasET, angkatanET;
-    private Button daftarButton;
+    private Button daftarButton, daftarkanButton;
     private AnggotaEntity anggotaEntity;
     private KomunitasDAO komunitasDAO;
 
@@ -33,9 +39,10 @@ public class MainActivity extends AppCompatActivity {
         this.emailET = findViewById(R.id.emailET);
         this.komunitasET = findViewById(R.id.komunitasET);
         this.angkatanET = findViewById(R.id.angkatanET);
-        this.daftarButton = findViewById(R.id.daftarButton);
+        this.daftarButton = findViewById(R.id.memberListButton);
+        this.daftarkanButton = findViewById(R.id.daftarButton);
 
-        this.daftarButton.setOnClickListener(new View.OnClickListener() {
+        this.daftarkanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String nama = nameET.getText().toString();
@@ -60,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
                     saveToDatabase(anggotaEntity);
                     Log.d(TAG, "onClick: Anggota is: " + anggotaEntity.toString());
                 }
+            }
+        });
+
+        this.daftarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MemberListActivity.class);
+                startActivity(intent);
             }
         });
     }

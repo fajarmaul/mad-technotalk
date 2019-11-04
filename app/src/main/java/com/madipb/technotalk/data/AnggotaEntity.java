@@ -1,4 +1,4 @@
-package com.madipb.technotalk;
+package com.madipb.technotalk.data;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -6,7 +6,7 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 /*Model Anggota*/
-@Entity(tableName = "anggota_entity")
+@Entity(tableName = "anggota_table")
 public class AnggotaEntity {
 
     @PrimaryKey(autoGenerate = true)

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".ui.MainActivity"
     android:orientation="vertical"
     >
 
@@ -141,10 +141,20 @@
             android:id="@+id/daftarButton"
             android:layout_width="@dimen/width_login_username_layout"
             android:layout_height="wrap_content"
-            android:text="@string/daftar_anggota"
+            android:text="@string/daftarkan_anggota"
             android:layout_marginTop="@dimen/margin_extra"
             android:background="@drawable/background_button_orange"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/textWhite"/>
+
+        <Button
+            android:id="@+id/memberListButton"
+            android:layout_width="@dimen/width_login_username_layout"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/background_button_orange"
+            android:text="@string/daftar_anggota"
+            android:textColor="@color/textWhite" />
     </LinearLayout>
 </ScrollView>

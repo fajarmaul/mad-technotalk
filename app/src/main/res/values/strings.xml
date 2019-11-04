@@ -5,4 +5,6 @@
     <string name="himpunan_mahasiswa_ilmu_komputer_ipb">Himpunan Mahasiswa Ilmu Komputer IPB</string>
     <string name="angkatan">Angkatan</string>
     <string name="komunitas">Komunitas</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="daftarkan_anggota">Daftarkan Anggota</string>
 </resources>
