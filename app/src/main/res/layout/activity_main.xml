@@ -43,7 +43,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:src="@drawable/ic_person_orange"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/default_margin"/>
             <EditText
@@ -104,7 +104,6 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:hint="@string/komunitas"
-                android:inputType="textPassword"
                 android:textSize="@dimen/font_size_reguler"
                 android:textColor="@color/textBlack"
                 android:layout_margin="@dimen/default_margin"/>
@@ -131,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:hint="@string/angkatan"
-                android:inputType="textPassword"
+                android:inputType="number"
                 android:textSize="@dimen/font_size_reguler"
                 android:textColor="@color/textBlack"
                 android:layout_margin="@dimen/default_margin"/>
