@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MAD Technotalk</string>
+    <string name="membuat_akun_baru">Membuat Akun Baru</string>
+    <string name="daftar_anggota">Daftar Anggota</string>
+    <string name="himpunan_mahasiswa_ilmu_komputer_ipb">Himpunan Mahasiswa Ilmu Komputer IPB</string>
+    <string name="angkatan">Angkatan</string>
+    <string name="komunitas">Komunitas</string>
 </resources>
